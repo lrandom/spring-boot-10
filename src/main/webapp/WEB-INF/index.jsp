@@ -1,3 +1,4 @@
+<%@taglib prefix="c" uri="jakarta.tags.core" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,7 +9,12 @@
     <title>Document</title>
 </head>
 <body>
-<h1>${message}</h1>
-<h2>${message2}</h2>
+<h1>Calculator</h1>
+<c:out value="${sum}"/>
+<form method="post">
+    <input type="number" name="a" id="a" placeholder="a">
+    <input type="number" name="b" id="b" placeholder="b">
+    <button>Submit</button>
+</form>
 </body>
 </html>
