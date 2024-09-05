@@ -9,11 +9,11 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Calculator</h1>
-<c:out value="${sum}"/>
-<form method="post">
-    <input type="number" name="a" id="a" placeholder="a">
-    <input type="number" name="b" id="b" placeholder="b">
+
+<h1>Search</h1>
+<c:out value="${message}"/>
+<form>
+    <input type="text" name="keyword" id="keyword" placeholder="type a keyword">
     <button>Submit</button>
 </form>
 </body>
